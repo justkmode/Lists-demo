@@ -1,14 +1,14 @@
 # List of EC2 instance 
-# instance_ids = ["i-1234", "i-5678", "i-9012"]
+instance_ids = ["i-1234", "i-9012", "i-5678"]
 
 # List of IP adresses for a security group
-ip_addresses = ["10.0.0.1", "10.0.0.2", "10.0.0.3", "10.0.0.4"]
+# ip_addresses = ["10.0.0.1", "10.0.0.2", "10.0.0.3", "10.0.0.4"]
 
 # List of availability zones in a region
 # availability_zones = ["eu-west-1a", "eu-west-2a", "eu-west-2c"]
 
 # Print the lists
-# print(f"EC2 instances to terminate: {instance_ids}")
+print(f"EC2 instances to terminate: {instance_ids}")
 # print(f"First IP addresses: {ip_addresses}")
 # print(f"Number of AZs: {availability_zones}")
 
@@ -23,8 +23,17 @@ ip_addresses = ["10.0.0.1", "10.0.0.2", "10.0.0.3", "10.0.0.4"]
 # print("EC2 instances:", instance_ids)
 
 # Check if an item is in a list
-if "10.0.0.4" in ip_addresses:
-    print("Yes 10.0.0.4 is in the allowed list")
-else:
-    print("No 10.0.0.4 is not in the allowed list")
-print("IP addresses:", ip_addresses)
+# if "10.0.0.4" in ip_addresses:
+#     print("Yes 10.0.0.4 is in the allowed list")
+# else:
+#     print("No 10.0.0.4 is not in the allowed list")
+# print("IP addresses:", ip_addresses)
+
+# Slicing a List
+# First two AZ
+# first_two_azs = availability_zones[:2]
+# print("First two Azs:", first_two_azs)
+
+# Sorting
+instance_ids.sort()
+print("Sorted EC2 Instances", instance_ids)
